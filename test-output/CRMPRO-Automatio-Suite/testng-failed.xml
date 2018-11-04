@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [CRMPRO-Automatio-Suite]">
+  <test name="CRMPRO-Test(failed)">
+    <classes>
+      <class name="com.crmpro.qa.TestCases.LoginPageTest">
+        <methods>
+          <include name="validLogin"/>
+          <include name="validateLoginPageLOGO"/>
+          <include name="startBrowser"/>
+          <include name="validateLoginPageTitle"/>
+        </methods>
+      </class> <!-- com.crmpro.qa.TestCases.LoginPageTest -->
+      <class name="com.crmpro.qa.TestCases.HomePageTest">
+        <methods>
+          <include name="startBrowser"/>
+          <include name="verifyCRMPROlogoText"/>
+          <include name="verifyHomePageTitle"/>
+        </methods>
+      </class> <!-- com.crmpro.qa.TestCases.HomePageTest -->
+    </classes>
+  </test> <!-- CRMPRO-Test(failed) -->
+</suite> <!-- Failed suite [CRMPRO-Automatio-Suite] -->

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="CRMPRO-Automatio-SampleSuite">
+
+
+	<listeners>
+		<listener class-name="com.crmpro.qa.ReportListener.ExtentReporterNG" />
+	</listeners>
+
+
+
+	<test name="CRMPRO Automation Test">
+
+
+		<parameter name="Username" value="rahul_k" />
+		<parameter name="Password" value="rahulk" />
+
+		<classes>
+			<class name="com.crmpro.qa.TestCases.HomePageTest" />
+			<class name="com.crmpro.qa.TestCases.LoginPageTest" />
+			<class name="com.crmpro.qa.TestCases.ContactsPageTest" />
+		</classes>
+
+
+	</test> <!-- CRMPRO Automation Test -->
+</suite> <!-- CRMPRO-Automation-SampleSuite -->
