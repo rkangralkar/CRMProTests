@@ -12,6 +12,10 @@ import com.crmpro.qa.utilities.TestUtils;
 
 import junit.framework.Assert;
 
+
+
+//this test to verify all the features of hpme page
+
 public class HomePageTest extends TestBase {
 
 	LoginPage loginpage;
