@@ -12,20 +12,22 @@
     <classes>
       <class name="com.crmpro.qa.TestCases.LoginPageTest">
         <methods>
+          <include name="validLogin"/>
+          <include name="validateLoginPageLOGO"/>
           <include name="startBrowser"/>
-          <include name="tearDown"/>
+          <include name="validateLoginPageTitle"/>
         </methods>
       </class> <!-- com.crmpro.qa.TestCases.LoginPageTest -->
       <class name="com.crmpro.qa.TestCases.ContactsPageTest">
         <methods>
+          <include name="getValue"/>
           <include name="initializeBrowser"/>
-          <include name="tearDown"/>
         </methods>
       </class> <!-- com.crmpro.qa.TestCases.ContactsPageTest -->
       <class name="com.crmpro.qa.TestCases.HomePageTest">
         <methods>
           <include name="startBrowser"/>
-          <include name="logout"/>
+          <include name="verifyCRMPROlogoText"/>
           <include name="verifyHomePageTitle"/>
         </methods>
       </class> <!-- com.crmpro.qa.TestCases.HomePageTest -->
