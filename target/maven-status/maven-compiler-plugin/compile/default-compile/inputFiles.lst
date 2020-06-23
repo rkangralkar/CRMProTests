@@ -3,5 +3,6 @@ C:\Users\Admin\workspace\CRMProTest\src\main\java\com\crmpro\qa\pages\HomePage.j
 C:\Users\Admin\workspace\CRMProTest\src\main\java\com\crmpro\qa\pages\LoginPage.java
 C:\Users\Admin\workspace\CRMProTest\src\main\java\com\crmpro\qa\pages\ContactsPage.java
 C:\Users\Admin\workspace\CRMProTest\src\main\java\com\crmpro\qa\utilities\TestUtils.java
+C:\Users\Admin\workspace\CRMProTest\src\main\java\com\crmpro\qa\utilities\ExcelReader.java
 C:\Users\Admin\workspace\CRMProTest\src\main\java\com\crmpro\qa\ReportListener\ExtentReporterNG.java
 C:\Users\Admin\workspace\CRMProTest\src\main\java\com\crmpro\qa\utilities\WebEventListener.java

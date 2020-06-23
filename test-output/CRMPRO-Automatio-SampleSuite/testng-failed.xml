@@ -1,29 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [CRMPRO-Automatio-SampleSuite]">
+<suite thread-count="2" name="Failed suite [CRMPRO-Automatio-SampleSuite]" parallel="tests">
   <parameter name="Username" value="rahul_k"/>
   <parameter name="Password" value="rahulk"/>
   <listeners>
     <listener class-name="com.crmpro.qa.ReportListener.ExtentReporterNG"/>
   </listeners>
-  <test name="CRMPRO Automation Test(failed)">
+  <test name="CRMPRO Automation Test1(failed)" parallel="tests">
     <parameter name="Username" value="rahul_k"/>
     <parameter name="Password" value="rahulk"/>
     <classes>
       <class name="com.crmpro.qa.TestCases.LoginPageTest">
         <methods>
-          <include name="validLogin"/>
-          <include name="validateLoginPageLOGO"/>
           <include name="startBrowser"/>
-          <include name="validateLoginPageTitle"/>
+          <include name="tearDown"/>
         </methods>
       </class> <!-- com.crmpro.qa.TestCases.LoginPageTest -->
-      <class name="com.crmpro.qa.TestCases.ContactsPageTest">
-        <methods>
-          <include name="getValue"/>
-          <include name="initializeBrowser"/>
-        </methods>
-      </class> <!-- com.crmpro.qa.TestCases.ContactsPageTest -->
       <class name="com.crmpro.qa.TestCases.HomePageTest">
         <methods>
           <include name="startBrowser"/>
@@ -31,6 +23,32 @@
           <include name="verifyHomePageTitle"/>
         </methods>
       </class> <!-- com.crmpro.qa.TestCases.HomePageTest -->
+      <class name="com.crmpro.qa.TestCases.ContactsPageTest">
+        <methods>
+          <include name="initializeBrowser"/>
+        </methods>
+      </class> <!-- com.crmpro.qa.TestCases.ContactsPageTest -->
     </classes>
-  </test> <!-- CRMPRO Automation Test(failed) -->
+  </test> <!-- CRMPRO Automation Test1(failed) -->
+  <test name="CRMPRO Automation Test2(failed)" parallel="tests">
+    <classes>
+      <class name="com.crmpro.qa.TestCases.LoginPageTest">
+        <methods>
+          <include name="startBrowser"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.crmpro.qa.TestCases.LoginPageTest -->
+      <class name="com.crmpro.qa.TestCases.HomePageTest">
+        <methods>
+          <include name="startBrowser"/>
+        </methods>
+      </class> <!-- com.crmpro.qa.TestCases.HomePageTest -->
+      <class name="com.crmpro.qa.TestCases.ContactsPageTest">
+        <methods>
+          <include name="getValue"/>
+          <include name="initializeBrowser"/>
+        </methods>
+      </class> <!-- com.crmpro.qa.TestCases.ContactsPageTest -->
+    </classes>
+  </test> <!-- CRMPRO Automation Test2(failed) -->
 </suite> <!-- Failed suite [CRMPRO-Automatio-SampleSuite] -->

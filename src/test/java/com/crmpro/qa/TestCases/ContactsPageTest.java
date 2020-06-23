@@ -42,6 +42,8 @@ public class ContactsPageTest extends TestBase {
 		TestUtils.takeScreenShot(".\\screenshots\\ContactsPageTest\\contactsPage.png");
 		Assert.assertEquals(contactpage.getString(), "Load From Company");
 	}
+	
+	
 
 	@AfterClass
 	public void tearDown() {
