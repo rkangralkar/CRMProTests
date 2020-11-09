@@ -32,7 +32,6 @@ public class LoginPageTest extends TestBase {
 		Thread.sleep(2000);
 		System.out.println("webpage title is " + loginPage.loginPageTitle());
 		String title = loginPage.loginPageTitle();
-		TestUtils.takeScreenShot(".\\screenshots\\LoginPageTest\\validateLoginPageTitle.png");
 		boolean result = title.contains("customer relationship management, sales,");
 		Assert.assertEquals(result, true);
 		Thread.sleep(2000);
@@ -40,7 +39,6 @@ public class LoginPageTest extends TestBase {
 
 	@Test(priority = 2, enabled = true)
 	public void validateLoginPageLOGO() throws Exception {
-		TestUtils.takeScreenShot(".\\screenshots\\LoginPageTest\\validateLoginPageLOGO.png");
 		Assert.assertEquals(loginPage.validateLoginPageLOGO(), true);
 	}
 	
@@ -49,10 +47,8 @@ public class LoginPageTest extends TestBase {
 		Thread.sleep(2000);
 		homePage = loginPage.validLogin(prop.getProperty("username"), prop.getProperty("password"));
 		Thread.sleep(3000);
-		TestUtils.takeScreenShot(".\\screenshots\\LoginPageTest\\validLogin.png");
 		System.out.println(homePage.homePageTitle());
 		Assert.assertEquals(homePage.homePageTitle(), "CRMPRO");;
-		TestUtils.takeScreenShot(".\\screenshots\\LoginPageTest\\validLogin.png");
 	}
 
 	@AfterClass

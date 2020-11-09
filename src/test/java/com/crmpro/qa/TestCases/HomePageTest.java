@@ -40,13 +40,11 @@ public class HomePageTest extends TestBase {
 		
 	@Test (groups = { "HomePageTest" }, priority=1)
 	public void verifyHomePageTitle() throws Exception{
-		TestUtils.takeScreenShot(".\\screenshots\\HomePageTest\\homepageTitle.png");
 		Assert.assertEquals(homepage.homePageTitle(), "CRMPRO");
 	}
 
 	@Test (groups = { "HomePageTest" }, priority=2)
 	public void verifyCRMPROlogoText() throws Exception{
-		TestUtils.takeScreenShot(".\\screenshots\\HomePageTest\\verifyCRMPROlogoText.png");
 		//Assert.assertEquals(homepage.getLogoText(), "CRMPRO");
 		Assert.assertEquals("CRMPRO", homepage.getLogoText());
 	}

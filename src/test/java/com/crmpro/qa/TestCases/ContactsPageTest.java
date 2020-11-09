@@ -34,12 +34,12 @@ public class ContactsPageTest extends TestBase {
 		Thread.sleep(2000);
 		homepage = loginpage.validLogin(prop.getProperty("username"), prop.getProperty("password"));
 		Thread.sleep(3000);
-		contactpage = homepage.gotoContactsPage();
+		
 	}
 
 	@Test
 	public void getValue() throws Exception {
-		TestUtils.takeScreenShot(".\\screenshots\\ContactsPageTest\\contactsPage.png");
+		contactpage = homepage.gotoContactsPage();
 		Assert.assertEquals(contactpage.getString(), "Load From Company");
 	}
 	

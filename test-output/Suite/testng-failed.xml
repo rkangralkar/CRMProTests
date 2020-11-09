@@ -1,18 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Parallel test suite]">
+<suite name="Failed suite [Suite]">
   <parameter name="Username" value="rahul_k"/>
   <parameter name="Password" value="rahulk"/>
   <listeners>
     <listener class-name="com.crmpro.qa.utilities.ResultListener"/>
   </listeners>
-  <test name="Parallel Test(failed)">
+  <test name="Test(failed)" parallel="true">
     <classes>
       <class name="com.crmpro.qa.TestCases.ContactsPageTest">
         <methods>
           <include name="getValue"/>
           <include name="initializeBrowser"/>
-          <include name="tearDown"/>
         </methods>
       </class> <!-- com.crmpro.qa.TestCases.ContactsPageTest -->
       <class name="com.crmpro.qa.TestCases.LoginPageTest">
@@ -25,9 +24,9 @@
         <methods>
           <include name="startBrowser"/>
           <include name="verifyCRMPROlogoText"/>
-          <include name="logout"/>
+          <include name="verifyHomePageTitle"/>
         </methods>
       </class> <!-- com.crmpro.qa.TestCases.HomePageTest -->
     </classes>
-  </test> <!-- Parallel Test(failed) -->
-</suite> <!-- Failed suite [Parallel test suite] -->
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

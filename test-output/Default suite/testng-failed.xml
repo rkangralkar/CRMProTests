@@ -9,18 +9,6 @@
           <include name="verifyHomePageTitle"/>
         </methods>
       </class> <!-- com.crmpro.qa.TestCases.HomePageTest -->
-      <class name="com.crmpro.qa.TestCases.LoginPageTest">
-        <methods>
-          <include name="startBrowser"/>
-          <include name="tearDown"/>
-        </methods>
-      </class> <!-- com.crmpro.qa.TestCases.LoginPageTest -->
-      <class name="com.crmpro.qa.TestCases.ContactsPageTest">
-        <methods>
-          <include name="initializeBrowser"/>
-          <include name="tearDown"/>
-        </methods>
-      </class> <!-- com.crmpro.qa.TestCases.ContactsPageTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

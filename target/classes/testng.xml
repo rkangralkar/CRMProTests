@@ -1,9 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Suite">
-	<test name="Test">
-		<parameter name="Username" value="rahul_k" />
-		<parameter name="Password" value="rahulk" />
+
+<suite name="Parallel test suite" >
+	<parameter name="Username" value="rahul_k" />
+	<parameter name="Password" value="rahulk" />
+
+	<listeners>
+		<listener class-name="com.crmpro.qa.utilities.ResultListener"></listener>
+	</listeners>
+	<test name="Parallel Test" >
 		<classes>
 			<class name="com.crmpro.qa.TestCases.HomePageTest" />
 			<class name="com.crmpro.qa.TestCases.LoginPageTest" />
